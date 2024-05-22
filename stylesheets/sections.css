@@ -5,6 +5,10 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
 border-radius: 30px;
 */
 
+html{
+    scroll-snap-type: y mandatory;
+}
+
 
 .main-content {
     display: block;
@@ -16,24 +20,33 @@ border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 70vh;
+    scroll-snap-align: center;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 
 .grid-2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     height: 70vh;
+    scroll-snap-align: center;
+    margin-bottom: 15vh;
 }
 
 .grid-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 70vh;
+    scroll-snap-align: center;
+    margin-bottom: 15vh;
 }
 
 .grid-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 70vh;
+    scroll-snap-align: center;
+    margin-bottom: 15vh;
 }
 
 .card {
